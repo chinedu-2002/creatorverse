@@ -1,0 +1,314 @@
+/* Creatorverse App Styles */
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--pico-muted-color, #666);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-creator-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-creator-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
+/* Creators Grid */
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* No Creators Message */
+.no-creators {
+  text-align: center;
+  padding: 3rem;
+  background: var(--pico-card-background-color, #f8f9fa);
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.no-creators p {
+  font-size: 1.2rem;
+  color: var(--pico-muted-color, #666);
+  margin-bottom: 1rem;
+}
+
+.no-creators a {
+  color: var(--pico-primary, #1095c1);
+  font-weight: 600;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: var(--pico-muted-color, #666);
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--pico-primary, #1095c1);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* View Creator Page */
+.view-creator {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.creator-detail {
+  background: var(--pico-card-background-color, #fff);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.creator-image {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.creator-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creator-info {
+  padding: 2rem;
+}
+
+.creator-info h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.creator-info .description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--pico-color, #333);
+  margin-bottom: 1.5rem;
+}
+
+.creator-link a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--pico-primary-background, #1095c1);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.creator-link a:hover {
+  background: var(--pico-primary-hover-background, #0a6f8f);
+  color: white;
+}
+
+.creator-actions {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--pico-muted-border-color, #e0e0e0);
+}
+
+.creator-actions .edit-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #f39c12;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.creator-actions .edit-btn:hover {
+  background: #d68910;
+  color: white;
+}
+
+/* Form Pages (Add/Edit) */
+.add-creator,
+.edit-creator {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-creator h1,
+.edit-creator h1 {
+  margin-bottom: 1.5rem;
+}
+
+form {
+  background: var(--pico-card-background-color, #fff);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--pico-color, #333);
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.optional {
+  color: var(--pico-muted-color, #999);
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--pico-muted-border-color, #ddd);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--pico-primary, #1095c1);
+  box-shadow: 0 0 0 3px rgba(16, 149, 193, 0.1);
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.image-preview {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--pico-card-sectionning-background-color, #f8f9fa);
+  border-radius: 8px;
+}
+
+.image-preview p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--pico-muted-color, #666);
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+form button {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions button {
+  flex: 1;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%) !important;
+}
+
+.delete-btn:hover:not(:disabled) {
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4) !important;
+}
+
+/* Error Message */
+.error-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: 3rem;
+}
+
+.not-found h2 {
+  margin-bottom: 1rem;
+  color: var(--pico-muted-color, #666);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
