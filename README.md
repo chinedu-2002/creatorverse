@@ -1,104 +1,59 @@
-# 🌟 Creatorverse
+# WEB103 Prework - sprint
 
-A React application for showcasing and managing your favorite content creators. Built with Vite, React Router, and Supabase.
+Submitted by: Emmanuel Enenta
 
-## 📋 Features
+About this web app: which displays celebrity status
 
-### Required Features
-- [x] Use a logical component structure in React to create the frontend of the app
-- [x] Display content creators on the homepage of the app
-- [x] Each content creator item includes:
-  - Their name
-  - A link to their channel or page
-  - A short description of their content
-- [x] API calls use the async/await design pattern
-- [x] Clicking on a content creator item takes the user to their details page
-- [x] Each content creator has their own unique URL
-- [x] The user can edit a content creator to change their name, url, or description
-- [x] The user can delete a content creator
-- [x] The user can add a new content creator by entering a name, url, and description
-- [x] The new content creator then appears in the displayed list
+Time spent: 2 hours
 
-### Stretch Features
-- [x] Use PicoCSS to style HTML elements
-- [x] Display content creator items in a creative format (cards)
-- [x] Show an image of each content creator on their card
+## Required Features
 
-## 🚀 Getting Started
+The following **required** functionality is completed:
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm
-- A Supabase account
+<!-- 👉🏿👉🏿👉🏿 Make sure to check off completed functionality below -->
+- [x] **A logical component structure in React is used to create the frontend of the app**
+- [x] **At least five content creators are displayed on the homepage of the app**
+- [x] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
+- [x] **API calls use the async/await design pattern via Axios or fetch()**
+- [x] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
+- [x] **Each content creator has their own unique URL**
+- [x] **The user can edit a content creator to change their name, url, or description**
+- [x] **The user can delete a content creator**
+- [x] **The user can add a new content creator by entering a name, url, or description and then it is displayed on the homepage**
 
-### Installation
+The following **optional** features are implemented:
 
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd creatorverse
-```
+- [ ] Picocss is used to style HTML elements
+- [ ] The content creator items are displayed in a creative format, like cards instead of a list
+- [ ] An image of each content creator is shown on their content creator card
 
-2. Install dependencies:
-```bash
-npm install
-```
+The following **additional** features are implemented:
 
-3. Set up Supabase:
-   - Go to [Supabase](https://supabase.com) and create a new project
-   - Create a table called `creators` with the following columns:
-     - `id` (int8, primary key, auto-generated)
-     - `created_at` (timestamptz, default: now())
-     - `name` (text)
-     - `url` (text)
-     - `description` (text)
-     - `imageURL` (text, nullable)
+* [ ] List anything else that you added to improve the site's functionality!
 
-4. Configure the Supabase client:
-   - Open `src/client.js`
-   - Replace `YOUR_SUPABASE_PROJECT_URL` with your Supabase Project URL
-   - Replace `YOUR_SUPABASE_ANON_KEY` with your Supabase Anon Key
+## Video Walkthrough
 
-5. Start the development server:
-```bash
-npm run dev
-```
+Here's a walkthrough of implemented required features:
 
-## 📁 Project Structure
+👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-```
-creatorverse/
-├── src/
-│   ├── components/
-│   │   ├── Card.jsx          # Content creator card component
-│   │   └── Card.css          # Card styles
-│   ├── pages/
-│   │   ├── ShowCreators.jsx  # Homepage - displays all creators
-│   │   ├── ViewCreator.jsx   # View single creator details
-│   │   ├── AddCreator.jsx    # Add new creator form
-│   │   └── EditCreator.jsx   # Edit/delete creator form
-│   ├── App.jsx               # Main app with routes
-│   ├── App.css               # Global app styles
-│   ├── client.js             # Supabase client configuration
-│   ├── index.css             # Base styles + PicoCSS
-│   └── main.jsx              # React entry point
-├── package.json
-└── README.md
-```
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with ...  👉🏿 GIF tool here
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
 
-## 🛠️ Tech Stack
+## Notes
 
-- **React** - Frontend library
-- **Vite** - Build tool
-- **React Router** - Client-side routing
-- **Supabase** - Backend as a Service (BaaS) for database
-- **PicoCSS** - Minimal CSS framework
+Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-## 📸 Video Walkthrough
+## License
 
-<!-- Add your video walkthrough here -->
-<!-- Example: ![Video Walkthrough](./walkthrough.gif) -->
+Copyright [👉🏿 yyyy] [👉🏿 name of copyright owner]
 
-## 📝 License
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
-This project is part of CodePath's WEB103 course.
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
